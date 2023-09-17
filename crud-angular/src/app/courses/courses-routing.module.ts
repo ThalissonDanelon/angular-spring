@@ -1,14 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { CoursesComponent } from './containers/courses/courses.component';
-import { CourseFormComponent } from './containers/course-form/course-form.component';
-import { CourseResolver } from './guards/course.resolver';
+import { CoursesListComponent } from "./components/courses-list/courses-list.component";
 
 const routes: Routes = [
-  { path: '', component: CoursesComponent },
-  { path: 'new', component: CourseFormComponent, resolve: { course: CourseResolver } },
-  { path: 'edit/:id', component: CourseFormComponent, resolve: { course: CourseResolver } }
+  { path: '', component: CoursesListComponent },
 ];
 
 @NgModule({
