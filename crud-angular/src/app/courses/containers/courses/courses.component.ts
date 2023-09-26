@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from "@angular/router";
+
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-import { ErrorDialogComponent } from '../../shared/components/error-dialog/error-dialog.component';
-import { Course } from '../model/course';
-import { CoursesService } from '../services/courses.service';
-import { ActivatedRoute, Router } from "@angular/router";
+import { ErrorDialogComponent } from '../../../shared/components/error-dialog/error-dialog.component';
+import { CoursesService } from '../../services/courses.service';
+import { Course } from '../../model/course';
 
 @Component({
   selector: 'app-courses',
@@ -14,8 +15,6 @@ import { ActivatedRoute, Router } from "@angular/router";
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent {
-
-  readonly displayedColumns = ['name', 'category', 'actions'];
 
   courses$: Observable<Course[]> | null = null;
 

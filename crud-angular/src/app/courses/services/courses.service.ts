@@ -17,11 +17,11 @@ export class CoursesService {
   list(): Observable<Course[]> {
     return this.httpClient.get<Course[]>(this.API)
       .pipe(
-        first(),
+        first()
       );
   }
 
-  save(record: Course): Observable<Course> {
+  save(record: Partial<Course>): Observable<Course> {
     return this.httpClient.post<Course>(this.API, record);
   }
 
