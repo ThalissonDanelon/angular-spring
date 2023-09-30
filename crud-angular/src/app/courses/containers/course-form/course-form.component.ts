@@ -1,29 +1,52 @@
-import { NonNullableFormBuilder } from "@angular/forms";
+import { NonNullableFormBuilder, Validators } from "@angular/forms";
 import { MatSnackBar, MatSnackBarConfig } from "@angular/material/snack-bar";
 import { Location } from "@angular/common";
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { CoursesService } from "../../services/courses.service";
+import { ActivatedRoute } from "@angular/router";
+import { Course } from "../../model/course";
+import { error } from "@angular/compiler-cli/src/transformers/util";
 
 @Component({
   selector: 'app-course-form',
   templateUrl: './course-form.component.html',
   styleUrls: ['./course-form.component.scss']
 })
-export class CourseFormComponent {
+export class CourseFormComponent implements OnInit {
 
   form = this.formBuilder.group({
-    name: [''],
-    category: ['']
+    _id: [''],
+    name: ['', [
+      Validators.required,
+      Validators.minLength(2),
+      Validators.maxLength(200)
+    ]],
+    category: ['', Validators.required]
   });
 
   constructor(private formBuilder: NonNullableFormBuilder,
               private coursesService: CoursesService,
               private snackBar: MatSnackBar,
-              private location: Location) {
+              private location: Location,
+              private route: ActivatedRoute) {
+  }
+
+  ngOnInit(): void {
+    const course: Course = this.route.snapshot.data['course'];
+    console.log(course);
+    this.form.setValue({
+      _id: course._id,
+      name: course.name,
+      category: course.category
+    });
   }
 
   onSubmit(): void {
+    if (!this.form.valid) {
+      this.onError();
+      return;
+    }
     this.coursesService.save(this.form.value)
       .subscribe(() => this.onSuccess(), () => this.onError());
   }
@@ -55,6 +78,26 @@ export class CourseFormComponent {
       verticalPosition: 'top',
       duration: 5000
     }
+  }
+
+  getErrorMessage(fieldName: string) {
+    const field = this.form.get(fieldName);
+    if (field?.hasError('required')) {
+      return 'Campo obrigatório.';
+    }
+    if (field?.hasError('minlength')) {
+      const requiredLength = field.errors ? field.errors['minlength']['requiredLength'] : 2;
+      return `O nome deve conter no mínimo ${requiredLength} caracteres.`;
+    }
+    if (field?.hasError('maxlength') && fieldName === 'name') {
+      const requiredLength = field.errors ? field.errors['maxlength']['requiredLength'] : 200;
+      return `O nome deve conter no máximo ${requiredLength} caracteres.`;
+    }
+    if (field?.hasError('maxlength') && fieldName === 'category') {
+      const requiredLength = field.errors ? field.errors['maxlength']['requiredLength'] : 30;
+      return `O nome deve conter no máximo ${requiredLength} caracteres.`;
+    }
+    return 'Campo inválido.';
   }
 
 }
