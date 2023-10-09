@@ -5,31 +5,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ba6feea-e9b4-4317-aaee-dd03edab104a" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/../crud-angular/src/app/courses/guards/course.resolver.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crud-angular/src/app/courses/guards/course.resolver.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/thalisson/crudspring/CrudSpringApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/thalisson/crudspring/model/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/components/courses-list/courses-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../crud-angular/src/app/courses/components/courses-list/courses-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/components/courses-list/courses-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../crud-angular/src/app/courses/components/courses-list/courses-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/course-form/course-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/course-form/course-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/course-form/course-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/course-form/course-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/courses/courses.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/courses/courses.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/courses/courses.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/courses/courses.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/courses-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../crud-angular/src/app/courses/courses-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/services/courses.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../crud-angular/src/app/courses/services/courses.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../crud-angular/src/app/shared/shared.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../crud-angular/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../crud-angular/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crud-angular/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thalisson/crudspring/DTO/CourseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thalisson/crudspring/DTO/mapper/CourseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thalisson/crudspring/controller/ApplicationControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thalisson/crudspring/exception/RecordNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thalisson/crudspring/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/proxy.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/components/courses-list/courses-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/components/courses-list/courses-list.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/components/courses-list/courses-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/components/courses-list/courses-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/course-form/course-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/course-form/course-form.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/course-form/course-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/course-form/course-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/courses/courses.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/courses/courses.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/courses/courses.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/containers/courses/courses.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/courses-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/courses.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/guards/course.resolver.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/guards/course.resolver.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/model/course.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/services/courses.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/courses/services/courses.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/app-material/app-material.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/confirmation-dialog/confirmation-dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/error-dialog/error-dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/error-dialog/error-dialog.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/error-dialog/error-dialog.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/components/error-dialog/error-dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/pipes/category.pipe.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/pipes/category.pipe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/app/shared/shared.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/assets/courses.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-angular/tsconfig.spec.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thalisson/crudspring/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thalisson/crudspring/controller/CourseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thalisson/crudspring/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thalisson/crudspring/model/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/thalisson/crudspring/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thalisson/crudspring/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thalisson/crudspring/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thalisson/crudspring/model/Course.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,30 +123,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/thalisson_danelon/IdeaProjects/Angular/angular-spring/crud-spring",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/thalisson_danelon/IdeaProjects/Angular/angular-spring/crud-spring&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;athena&quot;,
+      &quot;h2&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -144,7 +198,15 @@
       <workItem from="1696027273088" duration="4058000" />
       <workItem from="1696089091159" duration="1197000" />
       <workItem from="1696094824686" duration="3062000" />
-      <workItem from="1696111649005" duration="2451000" />
+      <workItem from="1696111649005" duration="4660000" />
+      <workItem from="1696116331376" duration="4470000" />
+      <workItem from="1696297954996" duration="593000" />
+      <workItem from="1696334298676" duration="95000" />
+      <workItem from="1696467799375" duration="2092000" />
+      <workItem from="1696506638365" duration="21000" />
+      <workItem from="1696554318076" duration="1142000" />
+      <workItem from="1696594907179" duration="599000" />
+      <workItem from="1696813757543" duration="3382000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -162,7 +224,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694928983112</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <option name="closed" value="true" />
+      <created>1696114116793</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696114116793</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update">
+      <option name="closed" value="true" />
+      <created>1696114195883</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696114195883</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
